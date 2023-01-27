@@ -1,0 +1,14 @@
+//Write a Dart program to generates multiplication tables between n1 and n2 provided values....
+void main() {
+  int n1=2,n2=5,j,i;
+  print("Multiplication table between 2 to 5 are as below :: \n\n");
+  for (i = 2; i < 4; i++) 
+  {
+    print("Multiplication Table of ${i+1}");
+    for (j = 1; j <= 10; j++) 
+    {
+      print("${i+1}  *  $j  == ${(i+1) * j}");  
+    }
+    
+  }
+}

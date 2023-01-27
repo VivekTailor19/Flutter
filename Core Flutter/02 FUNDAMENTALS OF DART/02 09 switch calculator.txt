@@ -1,0 +1,38 @@
+//Write a Dart program to create a calculator using switch case..
+void main()
+{
+  int n1=20,n2=3;
+  
+  print("Enter Input as below to perform task :: ");
+  print(" +\t-\t*\t/\t% \n\n");
+  dynamic sign= "+";
+  switch(sign)
+  {
+    case "+" :
+      {
+        print("$n1 + $n2 == ${n1+n2}");
+        break;
+      }
+    case "-" :
+      {
+        print("$n1 - $n2 == ${n1-n2}");
+         break;
+      }
+    case "*" :
+      {
+        print("$n1 * $n2 == ${n1*n2}");
+         break;
+      }
+    case "/" :
+      {
+        print("$n1 / $n2 == ${n1/n2}");
+         break;
+      }
+    case "%" :
+      {
+        print("$n1 % $n2 == ${n1%n2}");
+         break;
+      }
+
+  }
+}

@@ -1,0 +1,8 @@
+//Write a Dart program to find a Simple Interest.
+void main()
+{
+  num money=20000,interest=15,year=3;
+  print("The Simple interest of the Money $money for $year duration at the interest rate of $interest is ===== ");
+  print("${money*year*interest/100} ");
+  
+}

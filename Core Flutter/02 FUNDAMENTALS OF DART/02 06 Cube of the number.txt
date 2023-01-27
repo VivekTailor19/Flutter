@@ -1,0 +1,6 @@
+//Write a Dart program to find a cube of any number.
+void main() 
+{
+  int n=8;
+  print("The cube of the number 8 is ${n*n*n}.");
+}
