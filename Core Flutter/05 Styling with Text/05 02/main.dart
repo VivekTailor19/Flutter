@@ -4,20 +4,37 @@ void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(backgroundColor: Colors.black,
+      home: Scaffold(
         appBar: AppBar(
-            leading: Icon(Icons.menu_rounded),
-            title: Text("Flutter App"),
-            centerTitle: true),
+          backgroundColor: Colors.redAccent,
+          title: Text("My RNW"),
+          centerTitle: true,
+        ),
         body: Center(
-          child: (Text("Red & White",
-            style: TextStyle(fontSize: 50,color: Colors.red,
-                decoration: TextDecoration.underline,
-                decorationStyle: TextDecorationStyle.double,decorationColor: Colors.yellowAccent),
-          )
-          ),
+          child: RichText(
+              text: TextSpan(
+            style: TextStyle(color: Colors.redAccent),
+            children: [
+              TextSpan(
+                text: "Red & White",
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 42,
+                    decoration: TextDecoration.underline),
+              ),
+              TextSpan(
+                text: "\n    Multimedia Education",
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+              ),
+              TextSpan(
+                text: "\n Shaping skills for scaling higher....!!!!",
+                style: TextStyle(fontSize: 14),
+              ),
+            ],
+          )),
         ),
       ),
     ),
   );
 }
+
