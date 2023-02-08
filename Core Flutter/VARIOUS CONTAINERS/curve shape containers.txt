@@ -1,0 +1,58 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+      MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: Scaffold(
+          backgroundColor: Colors.black,
+          appBar: AppBar(
+            backgroundColor: Colors.tealAccent,
+            title: Text(
+              "Hello India",
+              style: TextStyle(color: Colors.purple),
+            ),
+            centerTitle: true,
+          ),
+          body: Center(
+            child: Container(
+              height: 400,
+              width: 400,
+              alignment: Alignment.bottomLeft,
+              decoration: BoxDecoration(color: Colors.pink),
+              child: Container(
+                height: 400,
+                width: 400,
+                alignment: Alignment.bottomLeft,
+                decoration: BoxDecoration(
+                  color: Colors.green,
+                  borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(400),
+                  bottomRight: Radius.circular(400),),),
+                  child: Container(
+                    height: 300,
+                    width: 300,
+                    alignment: Alignment.bottomLeft,
+                    decoration: BoxDecoration(
+                    color: Colors.yellow,
+                    borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(300),
+                    bottomRight: Radius.circular(300),),),
+                    child: Container(
+                      height: 150,
+                      width: 150,
+                      decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(150),
+                        bottomRight: Radius.circular(150),),),
+            ),
+          ),
+        ),
+      ),
+        ),
+      ),
+        ),
+      );
+
+  }
